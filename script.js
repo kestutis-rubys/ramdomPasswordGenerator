@@ -26,9 +26,9 @@ const getPasswordLength = () => {
   if (customSymbolsValue > 0) {
     radioButtons[radioButtons.length - 1].value = customSymbolsValue;
   }
-  for (let i = 0; i < radioButtons.length; i++) {
-    if (radioButtons[i].checked) {
-      return +radioButtons[i].value;
+  for (i of radioButtons) {
+    if (i.checked) {
+      return +i.value;
     }
   }
 };
