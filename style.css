@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#new-password .radio-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#new-password .radio-btn div {
+  margin: 0 15px;
+}
+
+.custom-symbols-and-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.custom-symbols-and-btn div {
+  margin-bottom: 10px;
+}
+.custom-radio-btn input:nth-child(2) {
+  display: inline;
+  width: 50%;
+  margin: 10px 0;
+}
+
+#new-password button {
+  text-align: center;
+  margin: 10px 0;
+}

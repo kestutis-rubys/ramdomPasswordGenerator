@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Generate random password</h1>
+    <p>Select password length</p>
+    <form id="new-password">
+      <div class="radio-btn">
+        <div>
+          <input
+            type="radio"
+            name="symbols"
+            id="tenSymbols"
+            value="10"
+            checked
+          />
+          <label for="tenSymbols">10 symbols</label>
+        </div>
+
+        <div>
+          <input type="radio" name="symbols" id="twentySymbols" value="20" />
+          <label for="twentySymbols">20 symbols</label>
+        </div>
+        <div>
+          <input type="radio" name="symbols" id="thirtySymbols" value="30" />
+          <label for="thirtySymbols">30 symbols</label>
+        </div>
+      </div>
+      <div class="custom-symbols-and-btn">
+        <div>
+          <input type="radio" name="symbols" value="0" />Enter your password
+          length
+        </div>
+        <input type="text" name="symbols" id="customSymbols" />
+        <button type="submit">Generate password</button>
+      </div>
+    </form>
+    <h4>Your new password</h4>
+    <div id="generated-password"></div>
+  </body>
+</html>
